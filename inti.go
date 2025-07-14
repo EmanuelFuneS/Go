@@ -181,4 +181,22 @@ func main() { //funcion principal
 		fmt.Println(index, value)
 	}
 
+	//Functions
+
+	fmt.Println(myFunction())
+
+	//Estructuras
+
+	type MyStruct struct {
+		name string
+		age  int
+	}
+
+	myStruct := MyStruct{"Emanuel", 29}
+
+	fmt.Println((myStruct))
+}
+
+func myFunction() string {
+	return "Mi function"
 }
