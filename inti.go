@@ -38,4 +38,16 @@ func main() { //funcion principal
 	//Mostrar tipos de datos
 	fmt.Println(reflect.TypeOf(age))
 	fmt.Println(reflect.TypeOf(name))
+
+	//Numeros con numero flotante
+
+	var pi float32 = 3.14
+	fmt.Println(pi)
+
+	//Booleanos
+
+	var myBool bool = false
+	println(myBool)
+	myBool = true
+	println(myBool)
 }
