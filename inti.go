@@ -24,7 +24,37 @@ func main() { //funcion principal
 
 	fmt.Print(myString)
 
-	// Tipos de datos
+	/*
+		Tipos de Datos en Go
+		Tipos Básicos:
+
+		Enteros: int, int8, int16, int32, int64, uint, uint8, uint16, uint32, uint64, uintptr
+		Flotantes: float32, float64
+		Complejos: complex64, complex128
+		Booleano: bool
+		String: string
+		Byte: byte (alias de uint8)
+		Rune: rune (alias de int32, para Unicode)
+
+		Tipos Compuestos:
+
+		Array: [5]int (tamaño fijo)
+		Slice: []int (tamaño dinámico)
+		Map: map[string]int (clave-valor)
+		Struct: type Person struct { name string }
+		Pointer: *int (referencia a memoria)
+		Function: func(int) string (funciones como tipos)
+		Interface: interface{} (define comportamiento)
+		Channel: chan int (comunicación entre goroutines)
+
+		Tipo Especial:
+
+		Nil: valor cero para pointers, slices, maps, channels, functions e interfaces
+
+		Conversiones:
+		Go requiere conversiones explícitas: int(3.14), string(65)
+		Los tipos no tienen jerarquía - no hay herencia, solo composición.
+	*/
 
 	var name string = "Emanuel"
 	fmt.Println(name)
@@ -94,4 +124,31 @@ func main() { //funcion principal
 	*/
 
 	//Arrays
+
+	var myArray [3]int //al definir longitud se inicializan en 0
+
+	myArray[0] = 2 // se pueden reasignar
+
+	fmt.Println(myArray) // el modulo fmt puede imprimir contenido de arrays , Println() no puede
+
+	var arrayInit [2]int
+	arrayInit[0] = 9
+	arrayInit[1] = 2
+
+	fmt.Println((arrayInit))
+
+	// Map
+
+	myMap := make(map[string]int) //Definicion de un Map vacio
+
+	myMapInit := map[string]int{"age": 29, "cero": 0, "experienceYears": 1} //Map ya inicializado  con valores
+	fmt.Println(myMapInit)
+
+	fmt.Println(myMap)
+
+	myMap["age"] = 29
+	myMap["experienceYears"] = 1
+	myMap["cero"] = 0
+
+	fmt.Println(myMap)
 }
