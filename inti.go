@@ -50,4 +50,17 @@ func main() { //funcion principal
 	println(myBool)
 	myBool = true
 	println(myBool)
+
+	//auto init vars :=
+
+	myString2 := "auto init vars"
+	println(myString2)
+
+	//constantes
+
+	const myRol = "Full Stack"
+	println((myRol))
+
+	//Control de flujos
+
 }
