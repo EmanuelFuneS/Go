@@ -151,4 +151,7 @@ func main() { //funcion principal
 	myMap["cero"] = 0
 
 	fmt.Println(myMap)
+
+	//
+
 }
