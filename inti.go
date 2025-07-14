@@ -63,4 +63,34 @@ func main() { //funcion principal
 
 	//Control de flujos
 
+	if age >= 18 {
+		println("Soy mayor de edad")
+	} else {
+		println("No soy mayor de edad")
+	}
+
+	//Los IF's no encapsulan las comparaciones en parentesis
+
+	/*
+		Operadores de Go
+		Aritméticos:
+		+ - * / % (suma, resta, multiplicación, división, módulo)
+		Comparación:
+		== != < > <= >=
+		Lógicos:
+		&& || ! (AND, OR, NOT)
+		Asignación:
+		= += -= *= /= %= &= |= ^= <<= >>=
+		Incremento/Decremento:
+		++ --
+		Bitwise:
+		& | ^ << >> &^ (AND, OR, XOR, shift izq/der, AND NOT)
+		Punteros:
+		& (dirección) * (desreferencia)
+		Channel:
+		<- (enviar/recibir)
+		Declaración corta:
+		:= (declarar e inicializar)
+	*/
+
 }
