@@ -173,4 +173,12 @@ func main() { //funcion principal
 		fmt.Println(myArray[index], index)
 	}
 
+	for key, value := range myMap {
+		fmt.Println(key, value)
+	}
+
+	for index, value := range arrayInit {
+		fmt.Println(index, value)
+	}
+
 }
