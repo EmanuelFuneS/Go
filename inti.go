@@ -93,4 +93,5 @@ func main() { //funcion principal
 		:= (declarar e inicializar)
 	*/
 
+	//Arrays
 }
