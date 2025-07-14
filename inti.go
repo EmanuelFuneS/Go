@@ -1,6 +1,7 @@
 package main //punto de entrada
 
 import (
+	"container/list"
 	"fmt" // paquete de formateo
 	"reflect"
 )
@@ -151,7 +152,25 @@ func main() { //funcion principal
 	myMap["cero"] = 0
 
 	fmt.Println(myMap)
+	fmt.Println("---------------------")
 
-	//
+	//LIST
+
+	myList := list.New()
+	myList.PushBack(1) //PushBack agrega al final de la lista
+	myList.PushBack(2)
+	myList.PushBack(3)
+
+	myList.PushFront(0) // PushFront agrega al inicio de la lista
+
+	fmt.Println(myList.Back().Value)  //muestra el ultimo valor
+	fmt.Println(myList.Front().Value) //muestra el primer valor
+
+	print("--------------------- \n")
+	//Iteraciones / Bucles
+	fmt.Println("Bucles")
+	for index := 0; index < len(myArray); index++ {
+		fmt.Println(myArray[index], index)
+	}
 
 }
